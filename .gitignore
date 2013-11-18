@@ -4,3 +4,5 @@
 *.in
 # Temporary Error File
 err
+# vim swap file
+*.swp
