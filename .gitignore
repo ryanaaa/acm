@@ -1,0 +1,6 @@
+# Compiled Object File
+*.out
+# Some Large Input File
+*.in
+# Temporary Error File
+err

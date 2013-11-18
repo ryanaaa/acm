@@ -1,0 +1,33 @@
+基础知识:
+	N阶多项式P(x)的两种表示方法:
+		系数表示法: a[0,,n-1] 表示P(x) = sum( a[i]*x^i )
+		点值表示法: (x[0,,n-1], y[0,,n-1]) 表示P(x[i]) = y[i]
+	一种特殊的点值表示法: 取x[i] = w^i, 其中w= e^(pi*2/n)
+	以下y[i] 都表示x[i] = e^i时P的取值, 且n是2的幂
+
+DFT:
+	a[0,,n-1] -> y[0,,n-1]
+DFT-1:
+	y[0,,n-1] -> a[0,,n-1]
+FFT:
+	一种N*Log(N)复杂度求DFT的算法
+
+
+// n必需为2的幂
+// inv = 0 时，求a的DFT，结果存入a中
+// inv = 1 时，求a的逆DFT, 结果存入a中
+void FFT(Complex a[], int n, int inv)
+
+// num[0,,strlen(num) - 1]表示一个10进制数，如num="12"表示12
+// BASE 表示num中每几位分成一组，如num="1234", BASE = 2, 则P(x) = 34+12*x
+// 返回P(x)的系数表示法
+void init(Complex a[], int n, char *num, int BASE) {
+
+// 关于卷积数据范围
+点值表示法使用Double所以不必担心
+如果A(x) = sum(a[i]*x^i), B(x) = sum(b[i]*x^i), 那么C(x)=A(x)*B(x)=(c[i]*x^i)，其中
+c[i]<(n*max{a[i]}*max{b[i]}) < n*MAX^2
+
+// maxLen
+多项式P的阶的最大值
+
