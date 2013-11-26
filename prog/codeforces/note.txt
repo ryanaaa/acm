@@ -6,4 +6,11 @@
 210-D:
 	Levko and Sets
 	原根, 容斥DP
-	
+
+214-D:
+	Ghd	
+	数论，随机算法
+
+215-C
+	Sereja and the Arrangement of Numbers
+	数学逻辑
