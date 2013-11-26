@@ -6,3 +6,5 @@
 err
 # vim swap file
 *.swp
+# Backup File
+*.backup
