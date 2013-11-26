@@ -1,0 +1,9 @@
+210-B:
+	Levko and Array
+210-C: 
+	Levko and Strings
+	DP，字典序大小
+210-D:
+	Levko and Sets
+	原根, 容斥DP
+	
