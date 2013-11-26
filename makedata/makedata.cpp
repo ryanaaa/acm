@@ -13,16 +13,16 @@
 #include <vector>
 using namespace std;
 
-int RandMod(int mod) {
+int randInt(int mod) {
 	return (rand() % mod + mod) % mod;
 }
 
 int main() {
 	srand(time(NULL));
 	int Lx = 300, Ly = 300;
-	for (int i = 0; i < Lx; i++) putchar(RandMod(26) + 'A');
+	for (int i = 0; i < Lx; i++) putchar(randInt(26) + 'A');
 	putchar('\n');
-	for (int i = 0; i < Ly; i++) putchar(RandMod(26) + 'A');
+	for (int i = 0; i < Ly; i++) putchar(randInt(26) + 'A');
 	putchar('\n');
 	return 0;
 }
