@@ -7,6 +7,13 @@
 	Levko and Sets
 	原根, 容斥DP
 
+213-A
+	Matrix
+	数学逻辑
+213-B
+	贪心, 背包
+	注意到只要连个集合s1, s2对应的价格和P(s1) != P(s2)，s1和s2不同的部分就是两个不想交的物品集(可以交换了)
+
 214-D:
 	Ghd	
 	数论，随机算法
@@ -14,3 +21,4 @@
 215-C
 	Sereja and the Arrangement of Numbers
 	数学逻辑
+	
