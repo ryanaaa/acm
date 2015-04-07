@@ -1,3 +1,8 @@
+// 和传统的RMQ是一样的方式，但是实现起来更简单
+// memory: N*LOGN 
+// time-init: N*LOGN
+// time-query: N*LOGN
+
 // 2^LOG_N > MAX_N
 int par[MAX_N][LOG_N], dep[MAX_N];
 

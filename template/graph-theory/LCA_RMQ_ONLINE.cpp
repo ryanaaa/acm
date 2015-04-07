@@ -1,3 +1,7 @@
+// 预处理后在线查询
+// memory: V*LOGV RMQ所占
+// time-init: V+E+V*LOGV
+// time-query: V*LOGV
 /*
  * fst是欧拉序列中u的first id, uid表示dfs的顺序
  */
