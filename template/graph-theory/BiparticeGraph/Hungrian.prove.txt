@@ -1,0 +1,20 @@
+[argmenting path with M][匹配M的增广路]
+a path that starts and ends on free (unmatched) vertices
+and alternates between edges in and not in the matching
+
+[Berge's Lemma][Berge引理][Claude Berge in 1957]
+a matching M in a graph G is maximum <=> there is no augmenting path with M.
+M是最大匹配的充要条件是G中无M的可增广轨
+证明: 
+	1. for G(V,E), if deg(v)<=2 in V, then G 必由以下3种连通分量组成 孤立点 or 一个环 or 一条路径
+	2. 对于任意两个匹配M,M' 因为 M^M' 中任意一点最多属于两条边, 即deg<=2, 所以M^M'必定由以下3中联通分量组成: 孤立点,包含偶数边的环 or 一条路径 (且是交错路)
+	3. prove <=, 如果M没有argumenting path且存在M', |M'|>|M|, 考虑M'^M, 因为|M'|>|M|, 所以必存在path满足start edge,end edge in M', 于是就找到增广路了 
+	4. prove => is easy
+
+[匈牙利算法证明相关]
+http://duanple.blog.163.com/blog/static/709717672008111064351431/
+如果从一个点A出发，没有找到增广路径，那么无论再从别的点出发找到多少增广路径来改变现在的匹配，从A出发都永远找不到增广路径
+证明
+
+[Hall' theorem][Hall's marriage theorem][Hall定理][Philp Hall in 1935]
+二分图 X={x1,,,xm}, Y={y1,,,yn}, 存在相对于m的"完美匹配" <=> X中任意k个点至少与Y中的k个点相邻 (1<=k<=m)
