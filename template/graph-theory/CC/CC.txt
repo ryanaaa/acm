@@ -1,0 +1,9 @@
+[UG][undirected graph]
+[DG][directed graph]
+[CC][connected component]
+
+[SCC][strongly connected component]
+in DG: for all u,v in G, exist path(u->v)
+
+[DCC][double connected component][双连通][unformal]
+删除任意节点不改变连通性
