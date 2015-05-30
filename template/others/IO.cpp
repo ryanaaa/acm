@@ -12,3 +12,10 @@ void getInt(int &num){
     while(in=getchar(),in>='0'&&in<='9')     
         num*=10,num+=in-'0';  
 }   
+
+void readlineSplitSpace() {
+	gets(buf);
+	string s = buf;
+	istringstream ss(s);
+	while(ss >> s) v[i].push_back(s);
+}
